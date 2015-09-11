@@ -1,0 +1,97 @@
+$imageh:url("../images/parts/bg2.jpg");
+$imageA: url("../images/parts/table.jpg");
+
+
+
+@mixin base($imageh) {
+  position:relative;
+  height:800px;
+  background:$imageh;
+  background-repeat:no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  background-attachment:fixed;
+  overflow:hidden;
+}
+
+
+#header, #main, #article,#map
+#sidebar,#footer{
+}
+
+
+//First Page Logo
+#header{
+ @include base($imageh);
+}
+
+#article{
+ @include base($imageA);
+}
+
+
+//Second Page Take Survey
+#main{
+  position:relative;
+  height:800px;
+  background-color:$yellow;
+   }
+
+#map{
+  position:relative;
+  height:800px;
+}
+
+
+#contactform{
+ @include base($base-white);
+}
+
+#footer{
+  //position:relative;
+  height:400px;
+  background-color:$grayDark;
+}
+
+
+#slide{
+position:relative;
+height:800px;
+}
+
+
+
+  h1{
+   color:$base-white;
+   padding:10px;
+     }
+
+   p{
+
+    color:$base-white;
+    letter-spacing:-2px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+.l-abs{
+  position:absolute;
+}
+
+.l-rel{
+  position:relative;
+}
+
+.l-imgSize{
+  width:50%;
+  height:800px;
+}

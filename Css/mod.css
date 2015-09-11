@@ -1,0 +1,94 @@
+html{
+  background: url(bg2.jpg);
+}
+i{
+  font-weight: bolder;
+   color:red;
+
+}
+ul{list-style-type:none;}
+
+
+.modalDialog{
+   position:fixed;
+   font-family:Arial;
+   font-size: 12px;
+   top:0;
+   right:0;
+   bottom:0;
+   left:0;
+   background:rgba(0,0,0,0.6);
+
+   z-index:99999;
+   opacity:0;
+   -webkit-transition: opacity 400ms ease-in;
+   -moz-transition: opacity 400ms ease-in;
+   -o-transition: opacity 400ms ease-in;
+   pointer-events:none;
+   &:target{
+     opacity:1;
+     pointer-events:auto;
+   }
+}
+
+
+
+.modalDialog > div{
+   width:600px;
+   height:auto;
+   position:relative;
+   margin:3% auto;
+   border-radius:20px;
+   padding:5px 20px 13px 20px;
+   background: url(black-chalk.jpg);
+   background-size:100%;
+}
+.items{
+  padding-top:10px;
+  font-size:18px;
+  font-weight: bold;
+  color:white;
+}
+.items--copy{
+    color:white;
+   padding-bottom:5px;
+   border-bottom:1px dotted #999;
+}
+
+
+.items--copy{
+
+}
+
+.modalDialog h2{
+    font-size:25px;
+    font-weight:bolder;
+    color:white;
+    text-align:center;
+
+}
+
+a{
+  font-size:20px;
+}
+
+.close{
+  background:#fff;
+  color:red;
+  line-height:25px;
+  position:absolute;
+  right:7px;
+  text-align:center;
+  top:3px;
+  width:24px;
+  text-decoration:none;
+  font-weight:bold;
+  border:1px solid red;
+  -webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+
+}

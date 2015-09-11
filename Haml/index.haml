@@ -1,0 +1,105 @@
+!!!5
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+      %title Vegan Fine Dining | World Famous
+    %link(rel="stylesheet" type="text/css" href="Css/style.css")
+    %link(rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css")
+    %link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+    %link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css")
+
+  %body
+    .content
+       %header#header.l-rel
+         .view
+
+           %img.view--head.l-abs(src="images/parts/logo.svg")
+           %p.view--subhead.l-abs VEGAN RESTAURANT
+           %a(href="#a")
+             %img.view--arrow.l-abs(src="images/arrow.svg")
+       %a(name="a")
+       %section#main.l-rel
+         .survey
+
+           %h1.survey--head.l-abs
+             TAKE OUR 5Q SURVEY
+           %h3.survey--subhead.l-abs
+             CUSTOMER FEEDBACK IS VERY IMPORTANT TO US.
+           %p.survey--button.l-abs START
+       %article#article
+         .menu.l-rel
+
+           %a(href="http://www.madaroad.com")
+             %img.menu--head1.l-abs(src="images/parts/b_tabs/break.svg")
+           %a(href="Css/dineMod.html")
+             %img.menu--head2.l-abs(src="images/parts/b_tabs/dine.svg")
+           %a(href="http://www.yardflex.com")
+             %img.menu--head3.l-abs(src="images/parts/b_tabs/lunch.svg")
+           %a(href="http://www.msn.com")
+             %img.menu--head4.l-abs(src="images/parts/b_tabs/wine.svg")
+       %section#map
+         .direction.l-rel
+           %h1.direction--head DIRECTIONS
+           %p.direction--addr.l-abs
+             12 High Road Atlanta GA.30068
+           %img.direction--way(src="images/parts/map.jpg")
+           %ul.direction--time.l-abs
+             %li.direction--item Breakfast 9am-11am
+             %li.direction--item Lunch     12pm-4pm
+             %li.direction--item Dinner     7pm-11pm
+           %h2.direction--copy.l-abs.greenMe } HOUR
+
+       %section#slide
+         .slider
+           %img.slider--slid(src="images/parts/slide1.jpg")
+           %img.slider--slid(src="images/parts/slide2.jpg")
+
+
+       %section#contactform
+         .contact
+           %form(action="scripts/php/sendContact.php" method="POST" class="STYLE-NAME")
+             %label
+               %input(id="name" type="text" name="fname" placeholder="Whats you name?")
+             %label
+               %input(id="email" type="text" name="contactmail" placeholder="Can we email you?")
+             %label
+               %textarea(id="message" name"msg" placeholder="Say something")
+             %label
+               %input(type="submit" class="button" value="Contact Us")
+
+
+       %footer#footer
+         .foot.l-rel
+           %ul.misc.l-abs
+             %li.misc--item %a(href="#")="Were Hiring"
+             %li.misc--item %a(href="#")="Press Info"
+             %li.misc--item %a(href="#")="Gift cards"
+             %li.misc--item %a(href="#")="Terms of Service"
+
+           %ul.soc.l-abs
+             %li.soc--item
+               %a(href="http://www.madaroad.com")
+                 %img.soc--icon(src="images/youtube.png")
+             %li.soc--item
+               %a(href="http://www.madaroad.com")
+                 %img.soc--icon(src="images/instagram.png")
+             %li.soc--item
+               %a(href="http://www.madaroad.com")
+                 %img.soc--icon(src="images/twitter.png")
+             %li.soc--item
+               %a(href="http://www.madaroad.com")
+                 %img.soc--icon(src="images/facebook.png")
+
+
+
+
+
+
+
+
+
+
+
+    %script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+    %script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js")
+    %script(src="js/main.js")

@@ -1,0 +1,29 @@
+.foot {
+
+  width:100%;
+  height:auto;
+& .soc{
+  top:60%;
+  left:5%;
+}
+& .misc{
+   top:20%;
+   left:5%;
+   &--item a{
+     color:white;
+     font-size:25px;
+     padding-bottom:10px;
+   }
+
+}
+& .soc--item{
+  float:left;
+  padding-right:7px;
+
+}
+& .soc--icon{
+  width:100%;
+  height:100%;
+}
+
+}
