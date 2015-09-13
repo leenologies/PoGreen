@@ -3,10 +3,10 @@
   %head
     %meta(charset="utf-8")
       %title Vegan Fine Dining | World Famous
+    %link(href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css")
     %link(rel="stylesheet" type="text/css" href="Css/style.css")
     %link(rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css")
-    %link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
-    %link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css")
+
 
   %body
     .content
@@ -39,7 +39,7 @@
              %img.menu--head4.l-abs(src="images/parts/b_tabs/wine.svg")
        %section#map
          .direction.l-rel
-           %h1.direction--head DIRECTIONS
+           %h1.direction--head Directions
            %p.direction--addr.l-abs
              12 High Road Atlanta GA.30068
            %img.direction--way(src="images/parts/map.jpg")
@@ -57,26 +57,33 @@
 
        %section#contactform
          .contact
+           %h2 Make Reservation Here..
            %form(action="scripts/php/sendContact.php" method="POST" class="STYLE-NAME")
              %label
                %input(id="name" type="text" name="fname" placeholder="Whats you name?")
              %label
                %input(id="email" type="text" name="contactmail" placeholder="Can we email you?")
              %label
-               %textarea(id="message" name"msg" placeholder="Say something")
+               %input(id="phono" type="text" name="phone" placeholder="Phone")
              %label
-               %input(type="submit" class="button" value="Contact Us")
+               %input(id="thedate" type="text" name="rdate" placeholder="Date")
+             %label
+               %input(id="time" type="text" name="rtime" placeholder="Time")
+             %label
+               %input(id="amt" type="text" name="amt" placeholder="How many")
+             %label
+               %input(type="submit" class="button" value="reserve")
 
 
        %footer#footer
          .foot.l-rel
-           %ul.misc.l-abs
+           %ul.misc
              %li.misc--item %a(href="#")="Were Hiring"
              %li.misc--item %a(href="#")="Press Info"
              %li.misc--item %a(href="#")="Gift cards"
              %li.misc--item %a(href="#")="Terms of Service"
 
-           %ul.soc.l-abs
+           %ul.soc.
              %li.soc--item
                %a(href="http://www.madaroad.com")
                  %img.soc--icon(src="images/youtube.png")
@@ -90,8 +97,14 @@
                %a(href="http://www.madaroad.com")
                  %img.soc--icon(src="images/facebook.png")
 
+             %ul.tel
+               %li.tel--no
+                 %img(src="images/phone.png")
+                 678-746-2345
 
-
+             %form(method="POST" action="mailList.php")
+               %input(type="text" name="join" placeholder="Join Mail List")
+               %input(type="submit" value="Submit")
 
 
 
