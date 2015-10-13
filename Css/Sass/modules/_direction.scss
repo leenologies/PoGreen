@@ -2,13 +2,13 @@
   width:100%;
   height:800px;
     &--head{
-      font-size:80px;
+      font-size:5em;
       color:#ebc44e;
+
       text-align:center;
       color:$grayDark;
-      //letter-spacing:-4px;
-      font-family: 'Great Vibes', cursive;
-      //font-size:55px;
+      font-family: $fontHead;
+
     }
   &--way{
     width:100%;

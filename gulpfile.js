@@ -5,17 +5,9 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var browserSync = require('browser-sync');
 var plumber = require('gulp-plumber');
-var prettify = require('gulp-prettify');
 
 
-//Pretty html
-gulp.task('prettify',function(){
-  gulp.src('./index.html')
-   .pipe(prettify({indent_size:2}))
-   .pipe(gulp.dest('./'))
 
-});
-gulp.task('prettify-watch',['prettify'],browserSync.reload);
 
 //Haml
 gulp.task('haml',function(){

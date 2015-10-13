@@ -1,11 +1,26 @@
-.slider{
-  width:100%;
-  height:800px;
+.recommend{
+  width:70%;
+  margin:0 auto;
+ //background-color:$grayDark;
 
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 
-  &--slid{
-      width:100%;
-      height:100%;
-    }
+  & .food{
+    margin:5px;
 
+  }
+
+}
+
+h2{
+  font-family:'helvetica neue',sans-serif;
+  color:#fff;
+  padding-top:7px;
+//  font-family: $fontHead;
+  font-size:5em;
+  text-align:center;
+  margin:1.5em 0 1.5em 0;
+  //text-transform:uppercase;
 }

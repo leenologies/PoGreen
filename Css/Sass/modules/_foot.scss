@@ -8,6 +8,9 @@
 }
 & .misc{
    padding:40px 0px 0px 50px;
+   & .misc--item{
+     display:inline;
+   }
    &--item a{
      color:white;
      font-size:25px;

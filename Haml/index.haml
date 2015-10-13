@@ -3,108 +3,194 @@
   %head
     %meta(charset="utf-8")
       %title Vegan Fine Dining | World Famous
+
     %link(href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css")
+    %link(href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet")
     %link(rel="stylesheet" type="text/css" href="Css/style.css")
+
     %link(rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css")
+    %link(href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet")
+
 
 
   %body
     .content
-       %header#header.l-rel
-         .view
-
-           %img.view--head.l-abs(src="images/parts/logo.svg")
-           %p.view--subhead.l-abs VEGAN RESTAURANT
-           %a(href="#a")
-             %img.view--arrow.l-abs(src="images/arrow.svg")
-       %a(name="a")
-       %section#main.l-rel
-         .survey
-
-           %h1.survey--head.l-abs
-             TAKE OUR 5Q SURVEY
-           %h3.survey--subhead.l-abs
-             CUSTOMER FEEDBACK IS VERY IMPORTANT TO US.
-           %p.survey--button.l-abs START
-       %article#article
-         .menu.l-rel
-
-           %a(href="http://www.madaroad.com")
-             %img.menu--head1.l-abs(src="images/parts/b_tabs/break.svg")
-           %a(href="Css/dineMod.html")
-             %img.menu--head2.l-abs(src="images/parts/b_tabs/dine.svg")
-           %a(href="http://www.yardflex.com")
-             %img.menu--head3.l-abs(src="images/parts/b_tabs/lunch.svg")
-           %a(href="http://www.msn.com")
-             %img.menu--head4.l-abs(src="images/parts/b_tabs/wine.svg")
-       %section#map
-         .direction.l-rel
-           %h1.direction--head Directions
-           %p.direction--addr.l-abs
-             12 High Road Atlanta GA.30068
-           %img.direction--way(src="images/parts/map.jpg")
-           %ul.direction--time.l-abs
-             %li.direction--item Breakfast 9am-11am
-             %li.direction--item Lunch     12pm-4pm
-             %li.direction--item Dinner     7pm-11pm
-           %h2.direction--copy.l-abs.greenMe } HOUR
-
-       %section#slide
-         .slider
-           %img.slider--slid(src="images/parts/slide1.jpg")
-           %img.slider--slid(src="images/parts/slide2.jpg")
+      .lightbox
+      #f
+        #nav1
+          %ul
+            %li
+              %a(href="#ab")About
+            %li
+              %a(href="#men")Menu
+            %li
+              %a(href="#res")Reservations
+            %li
+              %a(href="#spec")Special
+            %li
+              %a(href="#par")Partners
+            %li
+              %a(href="#con")Contact
 
 
-       %section#contactform
-         .contact
-           %h2 Make Reservation Here..
-           %form(action="scripts/php/sendContact.php" method="POST" class="STYLE-NAME")
-             %label
-               %input(id="name" type="text" name="fname" placeholder="Whats you name?")
-             %label
-               %input(id="email" type="text" name="contactmail" placeholder="Can we email you?")
-             %label
-               %input(id="phono" type="text" name="phone" placeholder="Phone")
-             %label
-               %input(id="thedate" type="text" name="rdate" placeholder="Date")
-             %label
-               %input(id="time" type="text" name="rtime" placeholder="Time")
-             %label
-               %input(id="amt" type="text" name="amt" placeholder="How many")
-             %label
-               %input(type="submit" class="button" value="reserve")
 
 
-       %footer#footer
-         .foot.l-rel
-           %ul.misc
-             %li.misc--item %a(href="#")="Were Hiring"
-             %li.misc--item %a(href="#")="Press Info"
-             %li.misc--item %a(href="#")="Gift cards"
-             %li.misc--item %a(href="#")="Terms of Service"
+      %header#header.l-rel
 
-           %ul.soc.
-             %li.soc--item
-               %a(href="http://www.madaroad.com")
-                 %img.soc--icon(src="images/youtube.png")
-             %li.soc--item
-               %a(href="http://www.madaroad.com")
-                 %img.soc--icon(src="images/instagram.png")
-             %li.soc--item
-               %a(href="http://www.madaroad.com")
-                 %img.soc--icon(src="images/twitter.png")
-             %li.soc--item
-               %a(href="http://www.madaroad.com")
-                 %img.soc--icon(src="images/facebook.png")
+        .view
 
-             %ul.tel
-               %li.tel--no
-                 %img(src="images/phone.png")
-                 678-746-2345
+          %img.view--head.l-abs(src="images/parts/logo.svg")
+          %p.view--subhead.l-abs VEGAN RESTAURANT
+          %nav#nav2
+            %ul
+              %li
+                %a(href="#ab")
+                  %img.view--arrow.l-abs(src="images/arrow.svg")
+      %a(name="ab")
+      %section#main.l-rel
 
-             %form(method="POST" action="mailList.php")
-               %input(type="text" name="join" placeholder="Join Mail List")
-               %input(type="submit" value="Submit")
+        .survey
+
+          %h1.survey--head.l-abs
+            Our Mission
+          %p.survey--subhead.l-abs
+            Unique,Classy,Inviting Cusine for any occassion whether it just you or with the family.
+          %p.survey--subhead2.l-abs
+            We have your belly in mind.You will never be disappointed,fresh food everyday and special.Mission Accomplished.King of Philadelphia and worldwide love.
+            Our Love of food is deeper than any ocean, with our world famous chef's at your service.
+          %p.survey--subhead3.l-abs
+            Service to fit your every needs to keep you coming back.
+
+      %a(name="men")
+      %article#article
+        .lightbox
+          .lightbox-content
+            %h3 Wine List
+            %h4 Champagne/Sparkling Wine
+            %p Moet Imperial Brut  ..................... $9.00
+            %p Korbel Brut Dejon   ..................... $19.00
+            %p Blanc de Blanc est  ..................... $9.00
+            %h4 Chardonnay
+            %p Columbia Crest Gran ..................... $23.00
+            %p Mondavi Strong      ..................... $11.00
+            %p Simi                ..................... $90.00
+            %p Clos Du Bois        ..................... $32.00
+            %p Stags Leap          ..................... $5.00
+            %p Russian River       ..................... $49.00
+
+            .close-btn
+              %i.ion-ios-close-empty
+
+        .menu.l-rel
+
+          %a(href="" class="menu_btn")
+            %img.menu--head1.l-abs(src="images/parts/b_tabs/break.svg" class="menu_btn")
+          %a(href="")
+            %img.menu--head2.l-abs(src="images/parts/b_tabs/dine.svg" class="menu_btn")
+          %a(href="")
+            %img.menu--head3.l-abs(src="images/parts/b_tabs/lunch.svg" class="menu_btn")
+          %a(href="")
+            %img.menu--head4.l-abs(src="images/parts/b_tabs/wine.svg" class="menu_btn")
+
+      %a(name="res")
+      %section#contactform
+        %h2 Make Reservation Here..
+
+        .contact
+
+          %form(action="scripts/php/sendContact.php" method="POST" class="STYLE-NAME")
+            %label
+              %input(id="name" type="text" name="fname" placeholder="Whats you name?")
+            %label
+              %input(id="email" type="text" name="contactmail" placeholder="Can we email you?")
+            %label
+              %input(id="phono" type="text" name="phone" placeholder="Phone")
+            %label
+              %input(id="thedate" type="text" name="rdate" placeholder="Date")
+            %label
+              %input(id="time" type="text" name="rtime" placeholder="Time")
+            %label
+              %input(id="amt" type="text" name="amt" placeholder="How many")
+            %label
+              %input(type="submit" class="button" value="reserve")
+
+
+
+
+
+      %a(name="spec")
+      %section#slide
+      %a(name="rec")
+        %h2 Chef's Recommended....
+        .recommend
+          .food 1
+            %img(src="images/thumbnail/tbfood1.jpg")
+          .food 2
+            %img(src="images/thumbnail/tbfood2.jpg")
+          .food 3
+            %img(src="images/thumbnail/tbfood3.jpg")
+          .food 4
+            %img(src="images/thumbnail/tbfood5.jpg")
+          .food 5
+            %img(src="images/thumbnail/tbfood6.jpg")
+          .food 6
+            %img(src="images/thumbnail/tbfood7.jpg")
+          .food 7
+            %img(src="images/thumbnail/tbfood8.jpg")
+          .food 8
+            %img(src="images/thumbnail/tbfood9.jpg")
+          .food 9
+            %img(src="images/thumbnail/tbfood10.jpg")
+
+        %a(name="par")
+        %section#parts
+          %h2 Our Partners
+          .companys
+            .logo1
+              %img(src="images/logos/logo1.jpg")
+              %img(src="images/logos/logo2.jpg")
+              %img(src="images/logos/logo3.jpg")
+              %img(src="images/logos/logo4.jpg")
+              %img(src="images/logos/logo5.jpg")
+              %img(src="images/logos/logo6.jpg")
+              %img(src="images/logos/logo7.jpg")
+              %img(src="images/logos/logo8.jpg")
+
+
+
+
+
+
+      %footer#footer
+        .foot.l-rel
+          %ul.misc
+            %li.misc--item %a(href="#")="Were Hiring"
+            %li.misc--item %a(href="#")="Press Info"
+            %li.misc--item %a(href="#")="Gift cards"
+            %li.misc--item %a(href="#")="Terms of Service"
+
+          %ul.soc.
+            %li.soc--item
+              %a(href="http://www.madaroad.com")
+                %img.soc--icon(src="images/youtube.png")
+            %li.soc--item
+              %a(href="http://www.madaroad.com")
+                %img.soc--icon(src="images/instagram.png")
+            %li.soc--item
+              %a(href="http://www.madaroad.com")
+                %img.soc--icon(src="images/twitter.png")
+            %li.soc--item
+              %a(href="http://www.madaroad.com")
+                %img.soc--icon(src="images/facebook.png")
+
+            %ul.tel
+              %li.tel--no
+                %img(src="images/phone.png")
+                678-746-2345
+
+            %form(method="POST" action="mailList.php")
+              %input(type="text" name="join" placeholder="Join Mail List")
+              %input(type="submit" value="Submit")
 
 
 
@@ -115,4 +201,7 @@
 
     %script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
     %script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js")
+    %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js")
+    %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js")
+    %script(src="js/jquery.waypoints.min.js")
     %script(src="js/main.js")
